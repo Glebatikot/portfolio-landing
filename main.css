@@ -1,0 +1,61 @@
+@import "./_normalize.css";
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  background: linear-gradient(107.56deg, #191536 0%, #000000 100%);
+  display: flex;
+}
+
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 110px;
+}
+
+.logo {
+  height: 16px;
+}
+
+.logo__image {
+  height: 16px;
+  width: 77.5px;
+}
+
+.nav {
+  display: flex;
+  text-decoration: none;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 35px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  height: 48px;
+  width: 200px;
+
+  border-radius: 4px;
+  background: #05C2DF;
+  color: #fff;
+  transition: color 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #05C2DF;
+}
