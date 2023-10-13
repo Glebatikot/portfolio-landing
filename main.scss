@@ -1,6 +1,9 @@
 @import "./_normalize.css";
+
+$default-color: #05c2df;
+
 html {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -54,14 +57,15 @@ html {
 }
 
 .nav__link:hover {
-  color: #05c2df;
+  color: $default-color;
 }
 
 .buy {
   height: 48px;
   width: 200px;
+
   border-radius: 4px;
-  background: #05c2df;
+  background: $default-color;
   color: #fff;
   font-size: 16px;
   transition: color 0.3s, background 0.3s;
@@ -69,7 +73,7 @@ html {
 
 .buy:hover {
   background: #fff;
-  color: #05c2df;
+  color: $default-color;
   cursor: pointer;
 }
 
@@ -81,12 +85,12 @@ html {
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 46px;
+  font-size:46px;
   line-height: 130%;
 }
 
 .header__headline-blue {
-  color: #05c2df;
+  color: $default-color;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 46px;
@@ -113,14 +117,17 @@ html {
 }
 
 .header__slogan {
-  padding-bottom: 30 px;
+  padding-bottom: 30
+  px;
 }
 
 .header__price {
   display: inline-block;
   margin-bottom: 40px;
+
   font-size: 18px;
   font-weight: 500px;
+
   color: #fff;
 }
 
@@ -163,7 +170,7 @@ html {
   position: relative;
   font-weight: 400;
   font-size: 16px;
-  color: #05c2df;
+  color: $default-color;
   overflow: visible;
   background-color: transparent;
   border: none;
@@ -174,7 +181,8 @@ html {
   position: absolute;
   left: calc(50% - 4px);
   bottom: 0;
-  border-top: 6px solid #05c2df;
+  
+  border-top: 6px solid $default-color;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 0px solid transparent;
@@ -195,7 +203,8 @@ html {
   content: "";
   width: 69px;
   height: 1px;
-  background-color: #05c2df;
+  background-color: $default-color;
+
   transition: 0.5s;
 }
 
@@ -210,9 +219,11 @@ html {
 .scroll {
   background: inherit;
   border: none;
+
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
+
   transition: 0.3s ease;
 }
 
@@ -227,6 +238,7 @@ html {
 
 .benefits__headline {
   padding-top: 100px;
+
   text-align: center;
 }
 
@@ -241,24 +253,26 @@ html {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 400;
-  color: #05c2df;
+  color: $default-color;
 }
 
 .benefits__adding {
   padding-top: 16px;
+
   text-align: center;
 }
 
 .adding {
   font-weight: 400;
   font-size: 14px;
-  color: #05c2df;
+  color: $default-color;
 }
 
 .benefits__advantage-wrapper {
   padding-top: 85px;
   padding-bottom: 112px;
   gap: 20px;
+
   display: flex;
   justify-content: center;
 }
@@ -266,6 +280,7 @@ html {
 .advantage {
   width: 350px;
   height: 230px;
+
   text-align: center;
 }
 
@@ -298,68 +313,89 @@ html {
 .about {
   background: linear-gradient(146.86deg, #191536 -0.5%, #000000 99.5%);
   padding-top: 150px;
-}
-.about__top-content {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 170px;
-}
-.about__product-images {
-  margin-right: 300px;
-}
-.about__image {
+
+  &__top-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 170px;
+  }
+  
+  &__product-images {
+    margin-right: 300px;
+  }
+  
+  &__image {
   display: block;
+  
   margin-bottom: 10px;
+  }
+  
+  &__section-headline {
+    margin-bottom: 50px;
+  }
+  
+  &__text {
+    margin-bottom: 55px;
+  
+    width: 435px;
+    height: 105px;
+  }
+  
+  &__text-image{
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  &__bot-content {
+    display: flex;
+    padding-bottom: 150px;
+    justify-content: center;
+  }
+  
+  &__bot-text {
+    width: 528px;
+    height: 128px;
+  
+  }
+  &__meet {
+    margin-top: 20px;
+    margin-right: 100px;
+  }
+  
+  &__adding {
+    margin-bottom: 30px;
+  }
+  
+  &__headline-wrap{
+    display: flex;
+  }
+  
+  &__headline {
+    width: 100px;
+    transform: rotate(89.525deg);
+    text-transform: uppercase;
+    font-size: 64px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%;
+    color: transparent;
+    -webkit-text-stroke: 1px $default-color;
+    white-space: nowrap;
+    margin-block-start: 0;
+  }
+  
+  &__headline:nth-child(n+1) {
+  
+  }
+  
+  &__bot-headline {
+    display: block;
+    margin-bottom: 50px;
+  }
 }
-.about__section-headline {
-  margin-bottom: 50px;
-}
-.about__text {
-  margin-bottom: 55px;
-  width: 435px;
-  height: 105px;
-}
-.about__text-image {
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.about__bot-content {
-  display: flex;
-  padding-bottom: 150px;
-  justify-content: center;
-}
-.about__bot-text {
-  width: 528px;
-  height: 128px;
-}
-.about__meet {
-  margin-top: 20px;
-  margin-right: 100px;
-}
-.about__adding {
-  margin-bottom: 30px;
-}
-.about__headline-wrap {
-  display: flex;
-}
-.about__headline {
-  width: 100px;
-  transform: rotate(89.525deg);
-  text-transform: uppercase;
-  font-size: 64px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 130%;
-  color: transparent;
-  -webkit-text-stroke: 1px #05c2df;
-  white-space: nowrap;
-  margin-block-start: 0;
-}
-.about__bot-headline {
-  display: block;
-  margin-bottom: 50px;
-}
+
+
 
 .tech {
   background: #05040B;
@@ -380,7 +416,7 @@ html {
 }
 
 .tech__left-side, .tech__middle-side, .tech__right-side {
-  width: 33.3333333333%;
+  width: calc(100% / 3);
 }
 
 .tech__sensor {
@@ -431,15 +467,15 @@ html {
   position: absolute;
   width: calc(50% - 84px);
   height: 58px;
-  border-top: 1px solid #05c2df;
-  border-right: 1px solid #05c2df;
+  border-top: 1px solid $default-color;
+  border-right: 1px solid $default-color;
   left: 80px;
   top: 6px;
 }
 
 .tech-details__first-line::before {
-  content: "";
-  background-color: #05c2df;
+  content: '';
+  background-color: $default-color;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -464,7 +500,7 @@ html {
   width: 330px;
   height: 330px;
   border-radius: 50%;
-  border: 1px solid #05c2df;
+  border: 1px solid $default-color;
   transform: translateY(-66px);
 }
 
@@ -472,19 +508,19 @@ html {
   position: absolute;
   width: calc(50% - 350px);
   height: 240px;
-  border-bottom: 1px solid #05c2df;
-  border-right: 1px solid #05c2df;
+  border-bottom: 1px solid $default-color;
+  border-right: 1px solid $default-color;
   top: 6px;
   right: 350px;
 }
 
 .tech-details__second-line::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #05c2df;
+  background: $default-color;
   bottom: -3.5px;
 }
 
@@ -494,58 +530,60 @@ html {
 }
 
 .tech-details__second-line::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #05c2df;
+  background: $default-color;
   top: -3.5px;
   right: -3.5px;
 }
 
 .tech-details__third-line {
-  position: absolute;
+  position: absolute; 
   width: 350px;
   height: 107px;
   bottom: 103px;
   left: 130px;
+
   display: flex;
 }
 
 .tech-details__third-line div:nth-child(1) {
-  border-bottom: 1px solid #05c2df;
+  border-bottom: 1px solid $default-color;
   height: 100%;
   width: 60%;
-  border-right: 1px solid #05c2df;
+  border-right: 1px solid $default-color;
 }
 
 .tech-details__third-line div:nth-child(2) {
-  border-top: 1px solid #05c2df;
+  border-top: 1px solid $default-color;
   height: 100%;
   width: 40%;
-}
+  }
 
-.tech-details__third-line::after {
-  position: absolute;
-  content: "";
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  background: #05c2df;
-  bottom: -3.5px;
-}
+  .tech-details__third-line::after {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: $default-color;
+    bottom: -3.5px;
+  }
 
-.tech-details__third-line::before {
-  position: absolute;
-  content: "";
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  background: #05c2df;
-  top: -3.5px;
-  right: 0;
-}
+  .tech-details__third-line::before {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: $default-color;
+    top: -3.5px;
+    right: 0;
+  }
+
 
 .footer__top {
   background: #05040B;
@@ -553,6 +591,7 @@ html {
 
 .footer-top__content {
   padding: 150px 230px 150px 230px;
+
   display: flex;
   justify-content: space-between;
 }
@@ -594,7 +633,7 @@ html {
   width: 100%;
   margin-bottom: 24px;
   outline: none;
-  color: #929292;
+  color:#929292;
 }
 
 .form__message {
@@ -617,67 +656,80 @@ html {
 .footer-socials__list {
   display: flex;
   gap: 18px;
+
 }
 
 @media screen and (max-width: 1919px) {
   .header {
     padding: 30px 100px 50px;
   }
+
   .header__top {
     margin-bottom: 10px;
   }
+
   .header__headline {
     font-size: 46px;
     line-height: 130%;
   }
+
   .header__headline-blue {
     font-size: 46px;
     line-height: 130%;
   }
+
   .header__text {
     font-size: 16px;
     margin-bottom: 10px;
   }
+
   .header__background-image {
     position: absolute;
     width: 700px;
   }
+
   .header__play {
     margin-bottom: 80px;
   }
+
   .advantage {
     width: 250px;
   }
+
   .tech-details__third-line {
     width: calc(50% - 300px);
   }
 }
+
 @media screen and (max-width: 1620px) {
   .tech__content {
     padding: 100px 200px;
   }
+
   .tech-details__second-line {
     right: 200px;
     width: calc(50% - 200px);
   }
 }
+
 @media screen and (max-width: 1280px) {
   .main__section {
     display: flex;
     justify-content: center;
   }
+  
   .benefits__advantage-wrapper {
     width: 700px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
+  }  
+
   .advantage {
-    margin-left: 5;
+    margin-left: 5
   }
+
   .footer-top__content {
     padding: 80px 120px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

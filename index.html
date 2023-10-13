@@ -4,73 +4,351 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="select.css"> 
   </head>
   <body>
     <header class="header">
-      <section class="header__top">
-          <a href="#" class="logo">
-            <img
-              class="logo__image"
-              src="./images/Group 16.svg"
-              alt="logo-image"
-            >
-          </a>
+      <div class="wrapper">
+        <section class="header__top">
+            <a href="#" class="logo">
+              <img
+                class="logo__image"
+                src="./images/Group 16.svg"
+                alt="logo-image"
+              >
+            </a>
 
-          <div class="language">
-            <select id="select-language">
-              <option value="en">En</option>
+            <div class="select" id="select">
+              <select name="" id="" class="select__native">
+                  <option value="En">En</option>
+                  <option value="Fr">Fr</option>
+                  <option value="Ua">Ua</option>
+              </select>
+              <div class="select__value">
+                  En
+              </div>
+      
+              <div class="select__list">
+                  
+              </div>
+            </div>
 
-              <option value="ua">Ua</option>
-            </select>
-
-            <span>En</span>
-
-            <ul>
-              <li>En</li>
-              <li>Ua</li>
+          <nav class="header__nav nav">
+            <ul class="nav__menu">
+              <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="#tech" class="nav__link">Tech</a></li>
+              <li class="nav__item"><a href="#benefits" class="nav__link">Benefits</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
+          </nav>
+
+          <button class="header__buy buy">Buy now</button>
+        </section>
+
+        <section class="header__middle">
+          <article class="header__description">
+            <h1 class="header__headline">the new start of <br>
+              <span class="header__headline-blue">vr locomotion</span>
+            </h1>
+
+            <div class="header__specification">
+              <div class="header__text text">
+                Discover the most comprehensive VR Locomotion system, and unlock infinite motion in any games on any platforms!
+              </div>
+
+              <span class="header__price">1200$</span>
+
+              <button class="header__play play"><img src="images/Group 4.png"></button>
+            </div>
+          </article>
+
+
+          
+          <img src="./images/image.svg" class="header__background-image" alt="product image">
+        </section>
+
+        <section class="header__bottom">
+          <ul class="header__support">
+            <li class="header__faq">FAQ</li>
+            <li class="header__help">Help</li>
+          </ul>
+
+          <a href="#main-section" class="header__more">More</a>
+
+          <div class="header__switch switch switch_next ">
+            <button class="header__scroll scroll">Previous</button>
+
+            <button class="header__scroll scroll">Next</button>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="main" id="main-section">
+      <section class="main__section benefits">
+        <h2 class="benefits__headline section-headline"><img src="./images/Title 2.png" alt=""></h2>
+
+        <div class="benefits__adding adding">This also made for people who are interested in...</div>
+
+        <div class="benefits__advantage-wrapper">
+          <div class="benefits__advantage advantage">
+            <img src="images/Ресурс 1.svg" class="benefits__icon icon" alt="education icon">
+
+            <div class="benefits__text_bold text_bold">education</div>
+
+            <div class="benefits__text text">
+              Create aducational simulations, trainings and much more with unlimited virtual space and minimum physical space
+            </div>
           </div>
 
-        <nav class="header__nav nav">
+          <div class="benefits__advantage advantage">
+            <img src="images/skyline.svg" class="benefits__icon icon" alt="real estate icon">
+
+            <div class="benefits__text_bold text_bold">real estate</div>
+
+            <div class="benefits__text text">
+              Desighn architectural projects in a deeply realistic environment allowing visitors to freely walk around, and feel their vibe
+            </div>
+          </div>
+
+          <div class="benefits__advantage advantage">
+            <img src="images/Group.svg" class="benefits__icon icon" alt="fitness icon">
+
+            <div class="benefits__text_bold text_bold">fitness</div>
+
+            <div class="benefits__text text">
+              Combine business with pleasure, and discover countless ways to stay fit while playing your favorite VR Games!
+            </div>
+          </div>
+
+          <div class="benefits__advantage advantage">
+            <img src="images/network.svg" class="benefits__icon icon" alt="network icon">
+
+            <div class="benefits__text_bold text_bold">social interactions</div>
+
+            <div class="benefits__text text">
+              Hang out with your friends in the virtual world when you can’t meet space requirements
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section about" id="about">
+        <div class="about__top-content">
+          <div class="about__product-images">
+            <img src="./images/photo.b34407e6.png" class="about__image" alt="product photo">
+          
+            <div class="about__switch switch switch_next ">
+              <button class="about__scroll scroll">Previous</button>
+
+              <button class="about__scroll scroll">Next</button>
+            </div>
+          </div>
+
+          <div class="about__product">
+            <h2 class="about__section-headline section-headline">About <span class="section-headline_blue">product</span></h2>
+
+            <div class="about__text text">
+              KAT loco is a foot-based VR locomotion system that gives complete physical control over lower-body actions, allowing you to freely walk, run, and carry out just any other movement in virtual reality.
+            </div>
+
+            <button class="about__play play"><img src="images/Group 4.png"></button>
+          </div>
+        </div>
+
+        <div class="about__bot-content">
+          <div class="about__meet">
+            <div class="about__adding adding">Hello,</div>
+
+            <h2 class="about__bot-headline"><img src="./images/NICE TO MEET YOU!.png" alt="nice to meet you"></h2>
+
+            <div class="about__bot-text text">
+              KAT VR is an independent company dedicated to the research, development, and sales of VR Locomotion products and solutions. Founded in 2013, we have quickly grown to become one of the world’s leading professional suppliers of VR games’ & simulations’ equipment 
+            </div>
+          </div>
+          <div class="about__headline-wrap">
+            <h1 class="about__headline">about us</h1>
+            <h1 class="about__headline">about us</h1>
+            <h1 class="about__headline">about us</h1>
+            <h1 class="about__headline">about us</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section tech" id="tech">
+        <div class="tech__content">
+          <h2 class="tech__section-headline section-headline">tech <span class="section-headline_blue">specs</span></h2>
+
+          <div class="tech__details">
+            <div class="tech__left-side">
+              <div class="tech__sensor">
+                <div class="tech__sensor_bold text_bold">sensor</div>
+                
+                <div class="tech__text text">
+                  Weight: 35g/1.23oz each <br>Dimension: 50mm/1.97in <br>24mm/0.94in <br>Light: LED lights
+                </div>
+              </div>
+
+              <div class="tech__connection">
+                <div class="tech__connection_bold text_bold">connection</div>
+
+                <div class="tech__text text">
+                  Wireless: Bluetooth 4.2 <br>Signal range: 5m <br>Receiver: USB 2.0 and above
+                </div>
+              </div>
+            </div>
+
+            <div class="tech__middle-side">
+              <img src="./images/Image.png" class="tech__image" alt="kat photo">
+
+              <div class="tech-middle__outline-wrap">
+                <div class="tech-middle__outline"></div>
+              </div>
+            </div>
+
+            <div class="tech__right-side">
+              <div class="tech__battaries">
+                <div class="tech__battaries_bold text_bold">battaries</div>
+
+                <div class="tech__text text">
+                  Type: Lthium-lon polymer batteries <br>Capacity: 370mAh <br>Battery life: 10h of continuous use 150 hours <br>on stand by <br>Charging: Fast charging - 1 hour <br>Charging voltage and current: 5V = 0.5A
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-details__first-line"></div>
+            <div class="tech-details__second-line"></div>
+            <div class="tech-details__third-line">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section why" id="benefits">
+        <h2 class="why__headline">
+          <img src="./images/Group 13 2.png" alt="why kat loco">
+        </h2>
+
+        <div class="why__advantages">
+          <div class="why__advantage advantage">
+            <img src="./images/Group 13.png" class="advantage__icon icon" alt="universally compatible">
+
+            <div class="advantage__text_bold text_bold">universally compatible</div>
+
+            <div class="advantage__text text">KAT Loco offers universal compatibility across all major VR headsets and platforms allowing you to play any VR game with support for Free Locomotion</div>
+          </div>
+
+          <div class="why__advantage advantage">
+            <img src="./images/Group 13 (1).png"  class="advantage__icon icon" alt="control panel">
+
+            <div class="advantage__text_bold text_bold">vr/pc control panel</div>
+
+            <div class="advantage__text text">Our Multifunctional Software allows for quick access to KAT Loco’s control panel both from a computer desktop, and directly from your VR headset.</div>
+          </div>
+
+          <div class="why__advantage advantage">
+            <img src="./images/Group.png" class="advanage__icon icon" alt="wireless">
+
+            <div class="advantage__text_bold text_bold">wireless sensors</div>
+
+            <div class="advantage__text text">What makes it even more advanced, KAT Loco is entirely wireless, and comes with a complete system of algorithms, super durable batteries and more!</div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer" id="contact">
+      <section class="footer__top">
+        <div class="footer-top__content">
+          <div class="footer__contacts">
+            <div class="footer__adding adding">Have any questions?</div>
+
+            <h2 class="footer__headline section-headline">get in <span class="section-headline_blue">touch</span></h2>
+
+            <div class="footer__text text">Our manager will reply you within 15 minutes</div>
+
+            <div class="footer__touch text">
+              +86-0571-86105373 <br>
+              global@katvr.com <br>
+              overseas@katvr.com
+            </div>
+          </div>
+
+          <div class="footer__right">
+            <div class="footer__forms">
+              <form>
+                <label for="name" class="footer__input-name">Name*</label><br>
+                <input type="text" id="name" name="name" class="form__input"><br>
+                <label for="email" class="footer__input-name">Email*</label><br>
+                <input type="email" name="email" id="email" class="form__input"><br>
+                <label for="phone" class="footer__input-name">Phone*</label><br>
+                <input type="text" name="phone" id="phone" class="form__input"><br>
+                <label for="message" class="footer__input-name">Message</label><br>
+                <input type="text" name="message" id="message" class="form__input form__message">
+              </form>
+            </div>
+
+            <div class="footer__contact-btn">
+              <button class="footer__contact-us buy">Contact Us</button>
+
+              <button class="footer__scroll-btn"><img src="./images/Group 4.1.svg" alt="upper"></button> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer__bottom">
+        <a href="#" class="logo">
+          <img
+            class="logo__image"
+            src="./images/Group 16.svg"
+            alt="logo-image"
+          >
+        </a>
+
+        <nav class="footer__nav nav">
           <ul class="nav__menu">
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Tech</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Benefits</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#tech" class="nav__link">Tech</a></li>
+            <li class="nav__item"><a href="#benefits" class="nav__link">Benefits</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </nav>
 
-        <button class="header__buy btn">Buy now</button>
+        <div class="footer__socials">
+          <ul class="footer-socials__list">
+            <li class="footer-socials__list">
+              <a href="https://uk-ua.facebook.com/" class="footer-socials__link">
+                <img src="images/Vector.svg" alt="" class="footer-socials__image">
+              </a>
+            </li>
+
+            <li class="footer-socials__list">
+              <a href="https://twitter.com/?lang=ru" class="footer-socials__link">
+                <img src="./images/Vector (1).svg" alt="" class="footer-socials__image">
+              </a>
+            </li>
+
+            <li class="footer-socials__list">
+              <a href="https://www.youtube.com/" class="footer-socials__link">
+                <img src="./images/Group (1).svg" alt="" class="footer-socials__image">
+              </a>
+            </li>
+
+            <li class="footer-socials__list">
+              <a href="https://www.reddit.com/" class="footer-socials__link">
+                <img src="./images/Vector.png" alt="" class="footer-socials__image">
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-
-      <section class="header__middle">
-
-      </section>
-
-      <section class="header__bottom"></section>
-    </header>
-
-    <main class="main">
-      <section class="main__section benefits">
-
-      </section>
-
-      <section class="main__section"></section>
-
-      <section class="main__section"></section>
-
-      <section class="main__section"></section>
-    </main>
-
-    <footer class="footer">
-      <section class="footer__top"></section>
-
-      <section class="footer__bottom"></section>
     </footer>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="./select.js"></script>
   </body>
 </html>
