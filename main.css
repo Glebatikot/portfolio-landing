@@ -319,7 +319,7 @@ html {
   margin: 0 auto 80px auto;
 }
 .tech__content {
-  padding: 160px 60px;
+  padding: 160px 100px;
 }
 .tech__details {
   position: relative;
@@ -340,6 +340,8 @@ html {
 }
 .tech__connection {
   padding-left: 60px;
+  padding-bottom: 20px;
+  margin-top: -20px;
 }
 .tech__connection_bold {
   padding-bottom: 20px;
